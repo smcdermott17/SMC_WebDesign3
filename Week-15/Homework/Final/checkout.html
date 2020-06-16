@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Checkout</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .navbar {
+      padding: 1.5rem 1rem;
+    }
+
+    .jumbotron {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+</head>
+
+<body class="bg-light text-dark">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+      <a class="navbar-brand font-weight-bold" href="index.html">Bookstore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled font-weight-bold" href="checkout.html">Checkout</a>
+          </li>
+          <div class="navbar-nav text-center">
+            <a class=" nav-link" href="checkout.html">
+              <i class="fa fa-shopping-cart" aria-hidden="true">
+              </i>
+              <span id="cartItem cart active" class="p-0">0</span>
+            </a>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form class="was-validated" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <a id="inputFullName"></a>
+              <h4> Shipping </h4>
+              <label for="inputFullName">Full Name</label>
+              <input type="text" class="form-control" id="inputFullName" placeholder="" required>
+              <div class="invalid">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="" required>
+            <div class="invalid">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="" required>
+            <div class="valid">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+              <div class="invalid">
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control" required>
+                <option selected disabled value="">Select</option>
+                <option value="1">AL</option>
+                <option value="2">AK</option>
+                <option value="3">AZ</option>
+                <option value="4">AR</option>
+                <option value="5">CA</option>
+                <option value="6">CO</option>
+                <option value="7">CT</option>
+                <option value="8">DE</option>
+                <option value="9">FL</option>
+                <option value="10">GA</option>
+                <option value="11">HI</option>
+                <option value="12">ID</option>
+                <option value="13">IL</option>
+                <option value="14">IN</option>
+                <option value="15">IA</option>
+                <option value="16">KS</option>
+                <option value="17">KY</option>
+                <option value="18">LA</option>
+                <option value="19">ME</option>
+                <option value="20">MD</option>
+                <option value="21">MA</option>
+                <option value="22">MI</option>
+                <option value="23">MN</option>
+                <option value="24">MS</option>
+                <option value="25">MO</option>
+                <option value="26">MT</option>
+                <option value="27">NE</option>
+                <option value="28">NV</option>
+                <option value="29">NH</option>
+                <option value="30">NJ</option>
+                <option value="31">NM</option>
+                <option value="32">NY</option>
+                <option value="33">NC</option>
+                <option value="34">ND</option>
+                <option value="35">OH</option>
+                <option value="36">OK</option>
+                <option value="37">OR</option>
+                <option value="38">PA</option>
+                <option value="39">RI</option>
+                <option value="40">SC</option>
+                <option value="41">SD</option>
+                <option value="42">TN</option>
+                <option value="43">TX</option>
+                <option value="44">UT</option>
+                <option value="45">VT</option>
+                <option value="46">VA</option>
+                <option value="47">WA</option>
+                <option value="48">WV</option>
+                <option value="49">WI</option>
+                <option value="50">WY</option>
+              </select>
+              <div class="invalid">
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="number" class="form-control" id="inputZip" required>
+              <div class="invalid">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" onclick="copyInfo(this.form)">
+            <label class="form-check-label" for="gridCheck">
+              Same Billing Address As Shipping Address
+            </label>
+          </div>
+
+          <div class="form-group">
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <h4> Billing </h4>
+                <label for="inputFullName2">Full Name</label>
+                <input type="text" class="form-control" id="inputFullName2" placeholder="" required>
+                <div class="invalid">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress21">Address</label>
+              <input type="text" class="form-control" id="inputAddress21" placeholder="" required>
+              <div class="invalid">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress221">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress221" placeholder="" required>
+              <div class="valid">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity2">City</label>
+                <input type="text" class="form-control" id="inputCity2" required>
+                <div class="invalid">
+                </div>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState2">State</label>
+                <select id="inputState2" class="form-control" required>
+                  <option selected disabled value="">Select</option>
+                  <option value="1">AL</option>
+                  <option value="2">AK</option>
+                  <option value="3">AZ</option>
+                  <option value="4">AR</option>
+                  <option value="5">CA</option>
+                  <option value="6">CO</option>
+                  <option value="7">CT</option>
+                  <option value="8">DE</option>
+                  <option value="9">FL</option>
+                  <option value="10">GA</option>
+                  <option value="11">HI</option>
+                  <option value="12">ID</option>
+                  <option value="13">IL</option>
+                  <option value="14">IN</option>
+                  <option value="15">IA</option>
+                  <option value="16">KS</option>
+                  <option value="17">KY</option>
+                  <option value="18">LA</option>
+                  <option value="19">ME</option>
+                  <option value="20">MD</option>
+                  <option value="21">MA</option>
+                  <option value="22">MI</option>
+                  <option value="23">MN</option>
+                  <option value="24">MS</option>
+                  <option value="25">MO</option>
+                  <option value="26">MT</option>
+                  <option value="27">NE</option>
+                  <option value="28">NV</option>
+                  <option value="29">NH</option>
+                  <option value="30">NJ</option>
+                  <option value="31">NM</option>
+                  <option value="32">NY</option>
+                  <option value="33">NC</option>
+                  <option value="34">ND</option>
+                  <option value="35">OH</option>
+                  <option value="36">OK</option>
+                  <option value="37">OR</option>
+                  <option value="38">PA</option>
+                  <option value="39">RI</option>
+                  <option value="40">SC</option>
+                  <option value="41">SD</option>
+                  <option value="42">TN</option>
+                  <option value="43">TX</option>
+                  <option value="44">UT</option>
+                  <option value="45">VT</option>
+                  <option value="46">VA</option>
+                  <option value="47">WA</option>
+                  <option value="48">WV</option>
+                  <option value="49">WI</option>
+                  <option value="50">WY</option>
+                </select>
+                <div class="invalid">
+                </div>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip2">Zip</label>
+                <input type="number" class="form-control" id="inputZip2" required>
+                <div class="invalid">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h4> Payment Information </h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="cc-number">Credit Card Number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cc-name">Name On Card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <div class="invalid">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="cc-expiration">Expiration Date</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="cc-cvv">CVV Number</label>
+                  <input type="number" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <button class="btn btn-success" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer></footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap input styles to
+        var forms = document.getElementsByClassName('needs-input');
+        // Loop over them and prevent submission
+        var input = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  <!-- Copy and Clear Form Fields -->
+  <script>
+    function copyInfo(form) {
+      var checked = form.gridCheck.checked;
+      form.inputFullName2.value = checked ? form.inputFullName.value : "";
+      form.inputAddress21.value = checked ? form.inputAddress.value : "";
+      form.inputAddress221.value = checked ? form.inputAddress2.value : "";
+      form.inputCity2.value = checked ? form.inputCity.value : "";
+      form.inputState2.value = checked ? form.inputState.value : "";
+      form.inputZip2.value = checked ? form.inputZip.value : "";
+    }
+  </script>
+</body>
+
+</html>
